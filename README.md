@@ -10,7 +10,7 @@ tar -xf linux-6.13.tar.xz
 cd linux-6.13
 cp ../hypervconfig ./.config
 make -j$(nproc)
-cp ./arch/x86/boot/bzImage && cd ..
+cp ./arch/x86/boot/bzImage ../ && cd ..
 sh build.sh
 ```
 进入Hyper-v管理器->新建->第二代->连接虚拟硬盘->使用现有虚拟硬盘(boot.vhdx)
